@@ -2,3 +2,181 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: Gilroy;
+    src: url("./../fonts/Gilroy-Light.otf");
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.navbar {
+    /*width: 100%;*/
+    height: 100px;
+    background: #FFFFFF;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-c1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-c2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-c3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-c1-logo {
+    width: 100%;
+    height: 100%;
+    margin-right: 32px;
+}
+
+.navbar-c1-signin {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2d2d2d;
+}
+
+.navbar-c2-links {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.79;
+    letter-spacing: 1.4px;
+    text-align: left;
+    color: #60003b;
+    margin: 0 34px;
+    text-transform: uppercase;
+}
+
+.navbar-c3-town {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.69;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2d2d2d;
+    margin-right: 18px;
+}
+
+.navbar-c3-arrow {
+    color: #60003b;
+}
+
+.navbar-bars {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    height: 300px;
+
+    background: url("./../img/header-background.png");
+}
+
+.header-text {
+    text-shadow: 2.4px 3.2px 9px #000000e3;
+    font-family: Gilroy;
+    font-size: 27.5px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 2.75px;
+    color: #ffffff;
+    margin: 0 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-shadow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-mobile-break {
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+    .navbar-c2-links {
+        margin: 0 16px;
+    }
+    .navbar {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding-top: 50px;
+    }
+    .navbar {
+        height: 50px;
+        justify-content: end;
+    }
+    .navbar-c1-logo {
+        width: 38px;
+        height: 22px;
+    }
+    .navbar-c2 {
+        display: none;
+    }
+    .navbar-c1-signin {
+        display: none;
+    }
+    .navbar-bars {
+        display: block;
+        color: #60003b;
+        position: fixed;
+        right: 20px;
+        top: 17px;
+    }
+    .header {
+        height: 115px;
+    }
+    .header-shadow {
+        background-color: rgba(0,0,0, 0.5);
+    }
+    .header-text {
+        font-size: 12px;
+        margin: 0;
+    }
+    .header-mobile-break {
+        display: inherit;
+    }
+}
