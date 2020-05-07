@@ -141,14 +141,9 @@ html, body {
     align-items: center;
 }
 
-.category-element:first-child {
-    margin-left: 58px;
+.article {
+    padding: 0 100px;
 }
-
-.category-element:last-child {
-    margin-right: 58px;
-}
-
 
 .category-element {
     padding: 16px 3vw;
@@ -181,15 +176,12 @@ html, body {
         justify-content: inherit;
         align-items: inherit;
     }
-    .category-element:first-child {
-        margin-left: 20px;
-    }
 
-    .category-element:last-child {
-        margin-right: 20px;
-    }
     .category-element {
         padding: 16px 20px;
+    }
+    .article {
+        padding: 0 20px;
     }
 }
 
