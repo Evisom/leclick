@@ -2,9 +2,404 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="wrapper">
 
+        <div class="navbar">
+            <div class="navbar-c1">
+                <img src="./img/logo.png" alt="" class="navbar-c1-logo">
+                <p class="navbar-c1-signin">
+                    <a href="" class="navbar-c1-signin-element">Вход</a>
+                    <a href="" class="navbar-c1-signin-element">Регистрация</a>
+                </p>
+
+            </div>
+            <div class="navbar-c2">
+                <p class="navbar-c2-links">рестораны</p>
+                <p class="navbar-c2-links">новости</p>
+                <p class="navbar-c2-links">публикации</p>
+            </div>
+            <div class="navbar-c3">
+                <p class="navbar-c3-town">Москва</p>
+                <img class="navbar-c3-arrow" src="./img/arrow-down.png" alt="">
+            </div>
+            <img src="./img/menu-bars.png" alt="" class="navbar-bars">
+        </div>
+
+        <div class="header header-restaurant" style="background-image: url('./img/header2.png')">
+            <div class="header-shadow header-shadow-restaurant">
+                <div class="header-text-restaurant">
+                    <p class="header-text-restaurant-title">UMI OYSTERS</p>
+                    <div class="header-text-restaurant-info">
+                        <img src="./img/truck.png" alt="" class="header-text-restaurant-img">
+                        <div class="header-text-restaurant-info-c1">
+                            <p class="header-text-restaurant-info-deliveryprice">Сумма заказа от 1000 ₽</p>
+                            <p class="header-text-restaurant-info-delivery">
+                                Бесплатная доставка внутри МКАД при сумме заказа от 3000 ₽. Доставляем до 40 км от МКАД</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="article">
+            <div class="restaurant-info">
+                <div class="restaurant-info-contacts">
+                    <div class="restaurant-info-contacts-c">
+                        <img src="./img/location.png" alt="" class="restaurant-info-contacts-c-icon">
+                        <p class="restaurant-info-contacts-c-text">Рождественский б-р, д. 1, 2 эт.</p>
+                    </div>
+                    <div class="restaurant-info-contacts-c">
+                        <img src="./img/phone.png" alt="" class="restaurant-info-contacts-c-icon">
+                        <p class="restaurant-info-contacts-c-text restaurant-info-contacts-c-text-phone">+7 (495) 374-9299</p>
+                    </div>
+                </div>
+                <div class="restaurant-info-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aut doloremque dolores
+                        eligendi exercitationem, fugit harum iure maxime minus mollitia nam pariatur, quae rerum unde.
+                        Cupiditate laboriosam optio temporibus?
+             Explicabo illo, sapiente? Alias enim in maiores mollitia quae quos similique voluptatibus
+                        voluptatum. Aspernatur assumenda, dicta dignissimos enim eos expedita illo ipsum iusto magnam
+                        quisquam sequi sint temporibus unde, voluptatem.
+                Accusantium adipisci animi architecto atque consectetur corporis dolor doloremque dolores fuga
+                        itaque laudantium molestiae molestias nemo odio placeat, quibusdam quo quos rerum sunt
+                        temporibus, tenetur ut vitae voluptate. Consequuntur, libero?
+
+                </div>
+            </div>
+            <div class="category">
+                <div class="category-element active">Завтраки до 14:00 </div>
+                <div class="category-element">Закуски</div>
+                <div class="category-element">Салаты</div>
+                <div class="category-element">Супы</div>
+                <div class="category-element">Горячее</div>
+                <div class="category-element">RAW</div>
+                <div class="category-element">Суши и Роллы</div>
+                <div class="category-element">WOK</div>
+                <div class="category-element">Деликатесы</div>
+                <div class="category-element">Еще <img class="category-element-arrow" src="./img/arrow-down.png" alt=""></div>
+            </div>
+            <p class="grid-title">
+                Завтраки до 14:00  <span class="grid-title-count">5</span>
+            </p>
+            <div class="grid">
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-pm grid-element__info-restaurant-pm-delete">
+                                    <img src="./img/trash.png" alt="">
+                                </div>
+                                <p class="grid-element__info-restaurant-count">1</p>
+                                <div class="grid-element__info-restaurant-pm">
+                                    <img src="./img/plus.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-pm">
+                                    <img src="./img/minus.png" alt="">
+                                </div>
+                                <p class="grid-element__info-restaurant-count">4</p>
+                                <div class="grid-element__info-restaurant-pm">
+                                    <img src="./img/plus.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="grid-title">
+                закуски <span class="grid-title-count">9</span>
+            </p>
+            <div class="grid">
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <div class="grid-element__img grid-element__img-restaurant" style="background-image: url('./img/card-image.png')">
+
+                    </div>
+
+                    <div class="grid-element__info-restaurant">
+                        <div class="grid-element__info-restaurant-title">Каша на японском рисе</div>
+                        <div class="grid-element__info-restaurant-subtitle">Яйца куриные, молоко, соль, узбекские помидоры, клыкач, зеленый лук, лимонник, соус тайгер милк, перец чили, зелень, микс-салат, отварной рис, кунжут</div>
+                        <div class="grid-element__info-restaurant-r">
+                            <div class="grid-element__info-restaurant-pw">
+                                <p class="grid-element__info-restaurant-pw-price">250 ₽</p>
+                                <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
+                            </div>
+                            <div class="grid-element__info-restaurant-buttons">
+                                <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-r1">
+                <div class="footer-r1-logo">
+                    <img src="./img/logo.png" alt="" class="footer-r1-logo-img">
+                </div>
+                <div class="footer-r1-markets">
+                    <a href="" class="footer-r1-market"><img src="./img/appstore.png" alt=""></a>
+                    <a href="" class="footer-r1-market"><img src="./img/googleplay.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-r2">
+                <div class="footer-r2-column">
+                    <p class="footer-r2-column-title">Регионы</p>
+                    <p class="footer-r2-column-link">Москва</p>
+                    <p class="footer-r2-column-link">Санкт-Петербург</p>
+                </div>
+                <div class="footer-r2-column">
+                    <p class="footer-r2-column-title">О кампании</p>
+                    <p class="footer-r2-column-link">Пользовательское соглашение</p>
+                    <p class="footer-r2-column-link">Стать партнером</p>
+                    <p class="footer-r2-column-link">Контакты</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>

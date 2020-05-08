@@ -26,6 +26,7 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 9999999999;
 }
 
 .navbar-c1 {
@@ -47,12 +48,28 @@ html, body {
 }
 
 .navbar-c1-logo {
-    width: 100%;
-    height: 100%;
+    width: 71px;
+    height: 41px;
     margin-right: 32px;
+
 }
 
 .navbar-c1-signin {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.navbar-c1-signin-element {
+    text-decoration: none;
     font-family: Gilroy;
     font-size: 16px;
     font-weight: normal;
@@ -104,7 +121,7 @@ html, body {
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background: url("./../img/header-background.png");
+    /*background: url("./../img/header-background.png");*/
 }
 
 .header-text {
@@ -138,7 +155,7 @@ html, body {
     width: 100%;
     margin-top: 16px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -147,7 +164,7 @@ html, body {
 }
 
 .category-element {
-    padding: 16px 3vw;
+    padding: 16px 0;
     font-family: Gilroy;
     font-size: 16px;
     font-weight: normal;
@@ -158,11 +175,19 @@ html, body {
     text-align: left;
     color: #2d2d2d;
     border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    white-space: nowrap;
 }
 
 .category-element.active {
     color: #60003b;
     border-bottom: 1px solid #60003b;
+}
+
+.category-element-arrow {
+    margin-left: 11px;
 }
 
 .search {
@@ -325,10 +350,11 @@ html, body {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 35px 0;
+    margin-top: 35px;
 }
 
 .footer {
+    margin-top: 50px;
     width: 100%;
     height: 296px;
     background-color: #ece0e7;
@@ -390,7 +416,215 @@ html, body {
     margin-bottom: 10px;
 }
 
+.header-text-restaurant {
+    width: 100%;
+    height: 100%;
+}
 
+.header-shadow-restaurant {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.header-text-restaurant-title {
+    width: 42%;
+    margin-top: 156px;
+    margin-left: 100px;
+    text-shadow: 2.1px 3.4px 9px #000000e3;
+    font-family: Gilroy;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.31;
+    letter-spacing: 3.6px;
+    /*padding-right: 289px;*/
+    padding-bottom: 27px;
+    color: #ffffff;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.header-text-restaurant-info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-top: 0px;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.header-text-restaurant-info-deliveryprice {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-text-restaurant-info-delivery {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-text-restaurant-img {
+    width: 24px;
+    height: 16px;
+    margin-right: 14px;
+}
+
+.restaurant-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant-info-contacts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.restaurant-info-contacts-c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.restaurant-info-contacts-c-text {
+    font-family: Gilroy;
+    font-size: 16px;
+    color: #2d2d2d;
+    margin-right: 50px;
+}
+
+.restaurant-info-contacts-c-text-phone {
+    color: #60003b;
+    border-bottom: 1px dashed #60003b;
+}
+
+.restaurant-info-contacts-c-icon {
+    margin-right: 15px;
+}
+
+.restaurant-info-text {
+    font-family: Gilroy;
+    font-size: 16px;
+    color: #2d2d2d;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+.grid-title-count {
+    color: #9e9e9e;
+    border-left: 1px solid #e8e8e8;
+    padding: 3px 10px;
+    margin-left: 10px;
+}
+
+.grid-element__img-restaurant {
+    height: 133px;
+}
+
+.grid-element__info-restaurant {
+    display: flex;
+    flex-direction: column;
+    margin: 9px 20px;
+    position: relative;
+    height: 120px;
+}
+
+.grid-element__info-restaurant-r {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: fill;
+    position: absolute;
+    bottom: -5px;
+    align-items: center;
+    width: 100%;
+}
+
+.grid-element__info-restaurant-pw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+}
+
+.grid-element__info-restaurant-title {
+    font-family: Gilroy;
+    font-size: 16px;
+    color: #2d2d2d;
+}
+
+.grid-element__info-restaurant-subtitle {
+    font-family: Gilroy;
+    font-size: 10px;
+    margin-top: 20px;
+    color: #2d2d2d;
+}
+
+.grid-element__info-restaurant-pw-price {
+    font-family: Gilroy;
+    font-size: 16px;
+    color: #2d2d2d;
+}
+
+.grid-element__info-restaurant-pw-weight {
+    font-family: Gilroy;
+    font-size: 9px;
+    color: #adadad;
+    margin-left: 13px;
+}
+
+.grid-element__info-restaurant-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid-element__info-restaurant-buttons-add {
+    padding: 7px 2.3vw;
+    font-family: Gilroy;
+    font-size: 12px;
+    color: #60003b;
+    text-transform: uppercase;
+    border-radius: 14px;
+    border: solid 1px #60003b;
+}
+
+.grid-element__info-restaurant-count {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2d2d2d;
+    margin: 0 15px;
+}
+
+.grid-element__info-restaurant-pm {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: solid 1px #60003b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-element__info-restaurant-pm-delete {
+    border: none;
+    background: #b23939;
+}
 
 @media (max-width: 992px) {
     .navbar-c2-links {
@@ -479,6 +713,7 @@ html, body {
 
     .grid-element {
         width: 100%;
+        height: 260px;
     }
 
     .footer-r2 {
@@ -494,5 +729,43 @@ html, body {
     }
     .footer-r1-market:first-child {
         margin-right: 11px;
+    }
+    .header.header-restaurant {
+        height: 250px;
+    }
+
+    .header-text-restaurant-title {
+        margin-top: 120px;
+        margin-left: 20px;
+        width: 80%;
+    }
+    .header-text-restaurant-info {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .header-text-restaurant-title {
+        font-size: 24px;
+    }
+    .header-text-restaurant-info-deliveryprice {
+        font-size: 12px;
+    }
+    .header-text-restaurant-info-delivery {
+        font-size: 12px;
+    }
+    .restaurant-info-contacts {
+        flex-direction: column;
+    }
+    .grid-element__info-restaurant-buttons {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    .grid-element__info-restaurant-buttons-add {
+        width: 80%;
+        justify-content: center;
+        display: flex;
+    }
+    .grid-element__info-restaurant-subtitle {
+        margin-top: 10px;
     }
 }
