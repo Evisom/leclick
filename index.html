@@ -9,35 +9,16 @@
     <link rel="stylesheet" href="./css/prettydropdowns.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/jquery.prettydropdowns.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#navbar-dropdown').prettyDropdown({
-                selectedMarker: "<img class='arrow-town' src='./img/arrow-up.png'>"
-            });
-            const menu = document.getElementById("mobilemnu"),
-                open = document.getElementById("open"),
-                close = document.getElementById("close");
-            document.getElementById("open").onclick = function () {
-                menu.className += ' open';
-                open.className += ' open';
-                close.className += ' open';
-            }
-            document.getElementById("close").onclick = function () {
-                menu.className = 'mobilemenu';
-                open.className = 'navbar-bars';
-                close.className = 'navbar-bars-close';
-            }
-        });
-    </script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
 
 <div class="mobilemenu" id="mobilemnu">
     <div class="mobilemenu-wrapper">
-        <p class="navbar-c2-links">рестораны</p>
-        <p class="navbar-c2-links">новости</p>
-        <p class="navbar-c2-links">публикации</p>
-        <p class="navbar-c1-signin navbar-c1-signin-mobile">Вход</p>
+        <a href="#" class="navbar-c2-links">рестораны</a>
+        <a href="#" class="navbar-c2-links">новости</a>
+        <a href="#" class="navbar-c2-links">публикации</a>
+        <a href="#" class="navbar-c1-signin navbar-c1-signin-mobile">Вход</a>
     </div>
 </div>
 
@@ -46,12 +27,12 @@
     <div class="navbar">
         <div class="navbar-c1">
             <img src="./img/logo.png" alt="" class="navbar-c1-logo">
-            <p class="navbar-c1-signin">Вход</p>
+            <a href="#" class="navbar-c1-signin">Вход</a>
         </div>
         <div class="navbar-c2">
-            <p class="navbar-c2-links">рестораны</p>
-            <p class="navbar-c2-links">новости</p>
-            <p class="navbar-c2-links">публикации</p>
+            <a href="#" class="navbar-c2-links">рестораны</a>
+            <a href="#" class="navbar-c2-links">новости</a>
+            <a href="#" class="navbar-c2-links">публикации</a>
         </div>
         <div class="navbar-c3">
             <select id="navbar-dropdown" class="navbar-dropdown">
@@ -79,13 +60,13 @@
 
     <div class="article">
         <div class="category">
-            <div class="category-element active">Все</div>
-            <div class="category-element">Китайская</div>
-            <div class="category-element">Греческая</div>
-            <div class="category-element">Итальянская</div>
-            <div class="category-element">Корейская</div>
-            <div class="category-element">Европейская</div>
-            <div class="category-element">Узбейская</div>
+            <a href="#" class="category-element category-element-active">Все</a>
+            <a href="#" class="category-element">Китайская</a>
+            <a href="#" class="category-element">Греческая</a>
+            <a href="#" class="category-element">Итальянская</a>
+            <a href="#" class="category-element">Корейская</a>
+            <a href="#" class="category-element">Европейская</a>
+            <a href="#" class="category-element">Узбейская</a>
         </div>
         <div class="search">
             <img src="./img/search.png" alt="" class="search-image">
@@ -364,7 +345,7 @@
             </div>
         </div>
         <div class="seemore-wrapper">
-            <a href="" class="seemore-wrapper-button">Показать еще</a>
+            <button class="seemore-wrapper-button">Показать еще</button>
         </div>
     </div>
 
@@ -374,21 +355,24 @@
                 <img src="./img/logo.png" alt="" class="footer-r1-logo-img">
             </div>
             <div class="footer-r1-markets">
-                <a href="" class="footer-r1-market"><img src="./img/appstore.png" alt=""></a>
-                <a href="" class="footer-r1-market"><img src="./img/googleplay.png" alt=""></a>
+                <a href="#" class="footer-r1-market"><img src="./img/appstore.png" alt=""></a>
+                <a href="#" class="footer-r1-market"><img src="./img/googleplay.png" alt=""></a>
             </div>
         </div>
         <div class="footer-r2">
             <div class="footer-r2-column">
                 <p class="footer-r2-column-title">Регионы</p>
-                <p class="footer-r2-column-link">Москва</p>
-                <p class="footer-r2-column-link">Санкт-Петербург</p>
+                <a href="#" class="footer-r2-column-link">Москва</a>
+                <br>
+                <a href="#" class="footer-r2-column-link">Санкт-Петербург</a>
             </div>
             <div class="footer-r2-column">
                 <p class="footer-r2-column-title">О кампании</p>
-                <p class="footer-r2-column-link">Пользовательское соглашение</p>
-                <p class="footer-r2-column-link">Стать партнером</p>
-                <p class="footer-r2-column-link">Контакты</p>
+                <a href="#" class="footer-r2-column-link">Пользовательское соглашение</a>
+                <br>
+                <a href="#" class="footer-r2-column-link">Стать партнером</a>
+                <br>
+                <a href="#" class="footer-r2-column-link">Контакты</a>
             </div>
         </div>
     </div>

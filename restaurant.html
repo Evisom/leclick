@@ -9,35 +9,16 @@
     <link rel="stylesheet" href="./css/prettydropdowns.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/jquery.prettydropdowns.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#navbar-dropdown').prettyDropdown({
-                selectedMarker: "<img class='arrow-town' src='./img/arrow-up.png'>"
-            });
-            const menu = document.getElementById("mobilemnu"),
-                open = document.getElementById("open"),
-                close = document.getElementById("close");
-            document.getElementById("open").onclick = function () {
-                menu.className += ' open';
-                open.className += ' open';
-                close.className += ' open';
-            }
-            document.getElementById("close").onclick = function () {
-                menu.className = 'mobilemenu';
-                open.className = 'navbar-bars';
-                close.className = 'navbar-bars-close';
-            }
-        });
-    </script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
 
 <div class="mobilemenu" id="mobilemnu">
     <div class="mobilemenu-wrapper">
-        <p class="navbar-c2-links">рестораны</p>
-        <p class="navbar-c2-links">новости</p>
-        <p class="navbar-c2-links">публикации</p>
-        <p class="navbar-c1-signin navbar-c1-signin-mobile">Вход</p>
+        <a href="#" class="navbar-c2-links">рестораны</a>
+        <a href="#" class="navbar-c2-links">новости</a>
+        <a href="#" class="navbar-c2-links">публикации</a>
+        <a href="#" class="navbar-c1-signin navbar-c1-signin-mobile">Вход</a>
     </div>
 
 </div>
@@ -48,7 +29,7 @@
             <img src="./img/supermarket.png" alt="" class="cart-info-ico">
             <p class="cart-info-price">Общая сумма заказа: <span id="price">1140</span>₽</p>
         </div>
-        <div class="cart-button">оформить заказ</div>
+        <button class="cart-button">оформить заказ</button>
     </div>
 </div>
 
@@ -63,9 +44,9 @@
             </p>
         </div>
         <div class="navbar-c2">
-            <p class="navbar-c2-links">рестораны</p>
-            <p class="navbar-c2-links">новости</p>
-            <p class="navbar-c2-links">публикации</p>
+            <a href="#" class="navbar-c2-links">рестораны</a>
+            <a href="#" class="navbar-c2-links">новости</a>
+            <a href="#" class="navbar-c2-links">публикации</a>
         </div>
         <div class="navbar-c3">
             <select id="navbar-dropdown" class="navbar-dropdown">
@@ -107,8 +88,8 @@
                 </div>
                 <div class="restaurant-info-contacts-c">
                     <img src="./img/phone.png" alt="" class="restaurant-info-contacts-c-icon">
-                    <p class="restaurant-info-contacts-c-text restaurant-info-contacts-c-text-phone">+7 (495)
-                        374-9299</p>
+                    <a class="restaurant-info-contacts-c-text restaurant-info-contacts-c-text-phone">+7 (495)
+                        374-9299</a>
                 </div>
             </div>
             <div class="restaurant-info-text">
@@ -124,16 +105,16 @@
             </div>
         </div>
         <div class="category">
-            <div class="category-element-active category-element">Завтраки до 14:00</div>
-            <div class="category-element">Закуски</div>
-            <div class="category-element">Салаты</div>
-            <div class="category-element">Супы</div>
-            <div class="category-element">Горячее</div>
-            <div class="category-element">RAW</div>
-            <div class="category-element">Суши и Роллы</div>
-            <div class="category-element">WOK</div>
-            <div class="category-element">Деликатесы</div>
-            <div class="category-element category-element-more">
+            <a href="#" class="category-element-active category-element">Завтраки до 14:00</a>
+            <a href="#" class="category-element">Закуски</a>
+            <a href="#" class="category-element">Салаты</a>
+            <a href="#" class="category-element">Супы</a>
+            <a href="#" class="category-element">Горячее</a>
+            <a href="#" class="category-element">RAW</a>
+            <a href="#" class="category-element">Суши и Роллы</a>
+            <a href="#" class="category-element">WOK</a>
+            <a href="#" class="category-element">Деликатесы</a>
+            <div href="#" class="category-element category-element-more">
                 <div class="category-element-more-btn">
                     Еще <img class="category-element-arrow" src="./img/arrow-down.png" alt=""></div>
                 <div class="category-dropdown">
@@ -164,7 +145,7 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            <button class="grid-element__info-restaurant-buttons-add">добавить</button>
                         </div>
                     </div>
                 </div>
@@ -185,13 +166,13 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-pm grid-element__info-restaurant-pm-delete">
+                            <button class="grid-element__info-restaurant-pm grid-element__info-restaurant-pm-delete">
                                 <img src="./img/trash.png" alt="">
-                            </div>
+                            </button>
                             <p class="grid-element__info-restaurant-count">1</p>
-                            <div class="grid-element__info-restaurant-pm">
+                            <button class="grid-element__info-restaurant-pm">
                                 <img src="./img/plus.png" alt="">
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -212,13 +193,13 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-pm">
+                            <button class="grid-element__info-restaurant-pm">
                                 <img src="./img/minus.png" alt="">
-                            </div>
+                            </button>
                             <p class="grid-element__info-restaurant-count">4</p>
-                            <div class="grid-element__info-restaurant-pm">
+                            <button class="grid-element__info-restaurant-pm">
                                 <img src="./img/plus.png" alt="">
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -239,7 +220,13 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            <button class="grid-element__info-restaurant-pm grid-element__info-restaurant-pm-delete">
+                                <img src="./img/trash.png" alt="">
+                            </button>
+                            <p class="grid-element__info-restaurant-count">1</p>
+                            <button class="grid-element__info-restaurant-pm">
+                                <img src="./img/plus.png" alt="">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -260,7 +247,13 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            <button class="grid-element__info-restaurant-pm">
+                                <img src="./img/minus.png" alt="">
+                            </button>
+                            <p class="grid-element__info-restaurant-count">4</p>
+                            <button class="grid-element__info-restaurant-pm">
+                                <img src="./img/plus.png" alt="">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -286,7 +279,7 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            <button class="grid-element__info-restaurant-buttons-add">добавить</button>
                         </div>
                     </div>
                 </div>
@@ -307,7 +300,13 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            <button class="grid-element__info-restaurant-pm grid-element__info-restaurant-pm-delete">
+                                <img src="./img/trash.png" alt="">
+                            </button>
+                            <p class="grid-element__info-restaurant-count">1</p>
+                            <button class="grid-element__info-restaurant-pm">
+                                <img src="./img/plus.png" alt="">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -328,7 +327,13 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            <button class="grid-element__info-restaurant-pm">
+                                <img src="./img/minus.png" alt="">
+                            </button>
+                            <p class="grid-element__info-restaurant-count">4</p>
+                            <button class="grid-element__info-restaurant-pm">
+                                <img src="./img/plus.png" alt="">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -349,7 +354,7 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            <button class="grid-element__info-restaurant-buttons-add">добавить</button>
                         </div>
                     </div>
                 </div>
@@ -370,7 +375,13 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            <button class="grid-element__info-restaurant-pm grid-element__info-restaurant-pm-delete">
+                                <img src="./img/trash.png" alt="">
+                            </button>
+                            <p class="grid-element__info-restaurant-count">1</p>
+                            <button class="grid-element__info-restaurant-pm">
+                                <img src="./img/plus.png" alt="">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -391,7 +402,13 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            <button class="grid-element__info-restaurant-pm">
+                                <img src="./img/minus.png" alt="">
+                            </button>
+                            <p class="grid-element__info-restaurant-count">4</p>
+                            <button class="grid-element__info-restaurant-pm">
+                                <img src="./img/plus.png" alt="">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -412,7 +429,7 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            <button class="grid-element__info-restaurant-buttons-add">добавить</button>
                         </div>
                     </div>
                 </div>
@@ -433,7 +450,13 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            <button class="grid-element__info-restaurant-pm grid-element__info-restaurant-pm-delete">
+                                <img src="./img/trash.png" alt="">
+                            </button>
+                            <p class="grid-element__info-restaurant-count">1</p>
+                            <button class="grid-element__info-restaurant-pm">
+                                <img src="./img/plus.png" alt="">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -454,7 +477,13 @@
                             <p class="grid-element__info-restaurant-pw-weight">250 грамм</p>
                         </div>
                         <div class="grid-element__info-restaurant-buttons">
-                            <div class="grid-element__info-restaurant-buttons-add">добавить</div>
+                            <button class="grid-element__info-restaurant-pm">
+                                <img src="./img/minus.png" alt="">
+                            </button>
+                            <p class="grid-element__info-restaurant-count">4</p>
+                            <button class="grid-element__info-restaurant-pm">
+                                <img src="./img/plus.png" alt="">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -475,14 +504,17 @@
         <div class="footer-r2">
             <div class="footer-r2-column">
                 <p class="footer-r2-column-title">Регионы</p>
-                <p class="footer-r2-column-link">Москва</p>
-                <p class="footer-r2-column-link">Санкт-Петербург</p>
+                <a href="#" class="footer-r2-column-link">Москва</a>
+                <br>
+                <a href="#" class="footer-r2-column-link">Санкт-Петербург</a>
             </div>
             <div class="footer-r2-column">
                 <p class="footer-r2-column-title">О кампании</p>
-                <p class="footer-r2-column-link">Пользовательское соглашение</p>
-                <p class="footer-r2-column-link">Стать партнером</p>
-                <p class="footer-r2-column-link">Контакты</p>
+                <a href="#" class="footer-r2-column-link">Пользовательское соглашение</a>
+                <br>
+                <a href="#" class="footer-r2-column-link">Стать партнером</a>
+                <br>
+                <a href="#" class="footer-r2-column-link">Контакты</a>
             </div>
         </div>
     </div>

@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -33,6 +37,14 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.seemore-wrapper-button {
+    text-transform: uppercase;
+}
+
+.navbar-bars:hover, navbar-bars-close:hover {
+    cursor: pointer;
 }
 
 .navbar-c2 {
@@ -637,7 +649,7 @@ html, body {
 }
 
 .mobilemenu {
-    position: absolute;
+    position: fixed;
     z-index: 99999999999999999;
     top: 0;
     bottom: 0;
