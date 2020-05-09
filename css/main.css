@@ -626,6 +626,14 @@ html, body {
     background: #b23939;
 }
 
+.navbar-c3-option {
+    width: 100%;
+    text-align: right;
+}
+
+.active {
+    box-shadow: -10px -10px 50px #e8e8e8;
+}
 @media (max-width: 992px) {
     .navbar-c2-links {
         margin: 0 16px;

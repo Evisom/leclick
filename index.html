@@ -6,6 +6,17 @@
     <title>LeClick</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/prettydropdowns.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/jquery.prettydropdowns.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initiate Pretty Dropdowns
+            $('#size').prettyDropdown({
+                selectedMarker: "<img class='arrow-town' src='./img/arrow-up.png'>"
+            });
+        });
+    </script>
 </head>
 <body>
 <div class="wrapper">
@@ -21,8 +32,14 @@
             <p class="navbar-c2-links">публикации</p>
         </div>
         <div class="navbar-c3">
-            <p class="navbar-c3-town">Москва</p>
-            <img class="navbar-c3-arrow" src="./img/arrow-down.png" alt="">
+            <select id="size" name="size" class="pretty" >
+                <option>
+                    <p class="navbar-c3-option">
+                        Москва
+                    </p>
+                </option>
+                <option>Санкт-Петербург</option>
+            </select>
         </div>
         <img src="./img/menu-bars.png" alt="" class="navbar-bars">
     </div>
