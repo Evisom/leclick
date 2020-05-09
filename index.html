@@ -10,15 +10,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/jquery.prettydropdowns.js"></script>
     <script>
-        $(document).ready(function() {
-            // Initiate Pretty Dropdowns
-            $('#size').prettyDropdown({
+        $(document).ready(function () {
+            $('#navbar-dropdown').prettyDropdown({
                 selectedMarker: "<img class='arrow-town' src='./img/arrow-up.png'>"
             });
+            const menu = document.getElementById("mobilemnu"),
+                open = document.getElementById("open"),
+                close = document.getElementById("close");
+            document.getElementById("open").onclick = function () {
+                menu.className += ' open';
+                open.className += ' open';
+                close.className += ' open';
+            }
+            document.getElementById("close").onclick = function () {
+                menu.className = 'mobilemenu';
+                open.className = 'navbar-bars';
+                close.className = 'navbar-bars-close';
+            }
         });
     </script>
 </head>
 <body>
+
+<div class="mobilemenu" id="mobilemnu">
+    <div class="mobilemenu-wrapper">
+        <p class="navbar-c2-links">рестораны</p>
+        <p class="navbar-c2-links">новости</p>
+        <p class="navbar-c2-links">публикации</p>
+        <p class="navbar-c1-signin navbar-c1-signin-mobile">Вход</p>
+    </div>
+</div>
+
 <div class="wrapper">
 
     <div class="navbar">
@@ -32,7 +54,7 @@
             <p class="navbar-c2-links">публикации</p>
         </div>
         <div class="navbar-c3">
-            <select id="size" name="size" class="pretty" >
+            <select id="navbar-dropdown" class="navbar-dropdown">
                 <option>
                     <p class="navbar-c3-option">
                         Москва
@@ -41,7 +63,8 @@
                 <option>Санкт-Петербург</option>
             </select>
         </div>
-        <img src="./img/menu-bars.png" alt="" class="navbar-bars">
+        <img src="./img/menu-bars.png" alt="" class="navbar-bars" id="open">
+        <img src="./img/menu-close.png" alt="" class="navbar-bars-close" id="close">
     </div>
 
     <div class="header" style="background-image: url('./img/header-background.png')">
@@ -197,9 +220,7 @@
         <div class="grid">
             <div class="grid-element">
                 <div class="grid-element__img" style="background-image: url('./img/card-image.png')">
-
                 </div>
-
                 <div class="grid-element__info-index">
                     <div class="grid-element__info-index__main">
                         <p class="grid-element__info-index__main-title">Вай Мэ! На Лубянке</p>
@@ -215,9 +236,7 @@
             </div>
             <div class="grid-element">
                 <div class="grid-element__img" style="background-image: url('./img/card-image.png')">
-
                 </div>
-
                 <div class="grid-element__info-index">
                     <div class="grid-element__info-index__main">
                         <p class="grid-element__info-index__main-title">Вай Мэ! На Лубянке</p>
@@ -233,9 +252,7 @@
             </div>
             <div class="grid-element">
                 <div class="grid-element__img" style="background-image: url('./img/card-image.png')">
-
                 </div>
-
                 <div class="grid-element__info-index">
                     <div class="grid-element__info-index__main">
                         <p class="grid-element__info-index__main-title">Вай Мэ! На Лубянке</p>
@@ -251,9 +268,7 @@
             </div>
             <div class="grid-element">
                 <div class="grid-element__img" style="background-image: url('./img/card-image.png')">
-
                 </div>
-
                 <div class="grid-element__info-index">
                     <div class="grid-element__info-index__main">
                         <p class="grid-element__info-index__main-title">Вай Мэ! На Лубянке</p>
@@ -269,9 +284,7 @@
             </div>
             <div class="grid-element">
                 <div class="grid-element__img" style="background-image: url('./img/card-image.png')">
-
                 </div>
-
                 <div class="grid-element__info-index">
                     <div class="grid-element__info-index__main">
                         <p class="grid-element__info-index__main-title">Вай Мэ! На Лубянке</p>
@@ -287,9 +300,7 @@
             </div>
             <div class="grid-element">
                 <div class="grid-element__img" style="background-image: url('./img/card-image.png')">
-
                 </div>
-
                 <div class="grid-element__info-index">
                     <div class="grid-element__info-index__main">
                         <p class="grid-element__info-index__main-title">Вай Мэ! На Лубянке</p>
@@ -305,9 +316,7 @@
             </div>
             <div class="grid-element">
                 <div class="grid-element__img" style="background-image: url('./img/card-image.png')">
-
                 </div>
-
                 <div class="grid-element__info-index">
                     <div class="grid-element__info-index__main">
                         <p class="grid-element__info-index__main-title">Вай Мэ! На Лубянке</p>
@@ -323,9 +332,7 @@
             </div>
             <div class="grid-element">
                 <div class="grid-element__img" style="background-image: url('./img/card-image.png')">
-
                 </div>
-
                 <div class="grid-element__info-index">
                     <div class="grid-element__info-index__main">
                         <p class="grid-element__info-index__main-title">Вай Мэ! На Лубянке</p>
@@ -341,9 +348,7 @@
             </div>
             <div class="grid-element">
                 <div class="grid-element__img" style="background-image: url('./img/card-image.png')">
-
                 </div>
-
                 <div class="grid-element__info-index">
                     <div class="grid-element__info-index__main">
                         <p class="grid-element__info-index__main-title">Вай Мэ! На Лубянке</p>
