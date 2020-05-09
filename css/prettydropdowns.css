@@ -218,3 +218,10 @@
     border-top-color: #dedede;
 }
 
+.prettydropdown > ul.active > li:first-child {
+  border-top: none;
+}
+
+.prettydropdown > ul.active > li>p {
+  border-top: 1px solid #e8e8e8;
+}
