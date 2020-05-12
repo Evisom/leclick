@@ -1054,3 +1054,14 @@ html, body {
         right: 30px;
     }
 }
+
+
+.prettydropdown.arrow > ul > li.selected:before {
+    display: none;
+}
+
+
+.prettydropdown.arrow > ul:not(.active) > li.selected:after {
+    border: none;
+    background-image: url('../img/arrow-down.svg');
+}
