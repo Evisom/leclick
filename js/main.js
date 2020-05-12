@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $('#navbar-dropdown').prettyDropdown({
-        selectedMarker: "<img class='arrow-town' src='./img/arrow-up.png'>"
+        selectedMarker: "<img style='transform: rotate(180deg); margin-bottom: -2px'  class='arrow-town' src='./img/arrow-down.svg'>",
+        // customClass: "cclass",
+        // hoverIntent: -1
     });
     const menu = document.getElementById("mobilemnu"),
         open = document.getElementById("open"),

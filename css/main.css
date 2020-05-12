@@ -200,6 +200,8 @@ html, body {
 
 .category-element-arrow {
     margin-left: 11px;
+    margin-bottom: -3px;
+    margin-top: -4px;
 }
 
 .search {
@@ -289,8 +291,8 @@ html, body {
 .grid-element__info-index {
     display: flex;
     flex-direction: row;
-    margin-top: 25px;
-    justify-content: end;
+    margin-top: 22px;
+    /*justify-content: end;*/
     width: 100%;
     /*margin: 0 23px;*/
 }
@@ -311,7 +313,10 @@ html, body {
     line-height: 0.69;
     letter-spacing: normal;
     color: #2d2d2d;
-    margin: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 3px;
 
 }
 
@@ -329,6 +334,26 @@ html, body {
 
 .grid-element__info-index__rate {
     margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+.rub-full {
+    color: #60003b;
+    font-weight: 800;
+    margin-right: 2px;
+    margin-top: 0;
+
+}
+
+.rub {
+    color: #60003b;
+    opacity: 0.4;
+    font-weight: 800;
+    margin-right: 2px;
+    margin-top: 0;
 }
 
 .grid-element__info-index__rate-rub {
@@ -355,6 +380,7 @@ html, body {
     letter-spacing: 1.4px;
     color: #ffffff;
     border-radius: 25px;
+    border: none;
     background-color: #60003b;
 }
 
@@ -386,6 +412,11 @@ html, body {
 
 .footer-r1-market:first-child {
     margin-right: 20px;
+}
+
+.footer-r1-logo-img {
+    width: 71px;
+    height: 41px;
 }
 
 .footer-r2 {
@@ -527,6 +558,8 @@ html, body {
 
 .restaurant-info-contacts-c-icon {
     margin-right: 15px;
+    width: 17px;
+    height: 20px;
 }
 
 .restaurant-info-text {
@@ -546,6 +579,19 @@ html, body {
 
 .grid-element__img-restaurant {
     height: 133px;
+}
+
+.header-text-restaurant-img {
+    width: 30px;
+    height: 20px;
+}
+
+.grid-element__info-restaurant-pm > img {
+    width: 11px;
+}
+
+.grid-element__info-restaurant-pm-delete > img  {
+    width: 17px;
 }
 
 .grid-element__info-restaurant {
@@ -614,6 +660,7 @@ html, body {
     text-transform: uppercase;
     border-radius: 14px;
     border: solid 1px #60003b;
+    background: white;
 }
 
 .grid-element__info-restaurant-count {
@@ -632,6 +679,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
 }
 
 .grid-element__info-restaurant-pm-delete {
@@ -675,6 +723,17 @@ html, body {
     display: none;
 }
 
+#open {
+    margin-top: -3px;
+}
+
+#close, #open {
+    width: 22px;
+}
+
+.DDArrow {
+    /*background: red;*/
+}
 .navbar-bars-close.open {
     display: block;
     right: 17px;
@@ -726,6 +785,7 @@ html, body {
 
 .cart-info-ico {
     margin-right: 20px;
+    width: 35px;
 }
 
 #price {
@@ -770,6 +830,26 @@ html, body {
     transform: rotate(180deg);
 }
 
+.cart-button {
+    border: none;
+}
+
+.footer-r1-markets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 1281px) {
+    .grid-element {
+        max-width: 347px;
+    }
+    .grid {
+        width: 1098px;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 992px) {
     .navbar-c2-links {
         margin: 0 16px;
@@ -805,7 +885,7 @@ html, body {
 
     .navbar {
         height: 50px;
-        justify-content: end;
+        justify-content: start !important;
     }
 
     .navbar-c1-logo {
