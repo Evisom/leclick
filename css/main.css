@@ -2,6 +2,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -275,7 +279,6 @@ html, body {
 
 .grid-element:hover {
     border: solid 1px #60003b;
-    cursor: pointer;
 }
 
 .grid-element__img {
