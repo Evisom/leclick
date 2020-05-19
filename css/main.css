@@ -603,6 +603,7 @@ html, body {
     margin: 9px 20px;
     position: relative;
     height: 120px;
+    width: 90%;
 }
 
 .grid-element__info-restaurant-r {
