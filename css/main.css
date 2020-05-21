@@ -811,7 +811,7 @@ html, body {
     display: none;
     position: absolute;
     background: white;
-    margin-top: 30px;
+    margin-top: 27px;
     padding: 0 10px;
     box-shadow: 0px -10px 10px #f7f7f7;
     border-radius: 5px;
@@ -1065,4 +1065,10 @@ html, body {
 .prettydropdown.arrow > ul:not(.active) > li.selected:after {
     border: none;
     background-image: url('../img/arrow-down.svg');
+}
+
+.category-dropdown-element > a {
+    color: #2d2d2d;
+    display: block;
+    width: 100%;
 }
